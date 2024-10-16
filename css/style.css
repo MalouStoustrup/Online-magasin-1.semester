@@ -5,3 +5,21 @@
 }
 
 
+/* floating af billeder:
+
+
+        /* Full height and width */
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Image styling */
+        .top-image {
+            display: block;         /* Remove inline space */
+            width: 100vw;           /* Full width of the viewport */
+            height: auto;           /* Maintain aspect ratio */
+            position: absolute;     /* Position at the top */
+            top: 0;
+            left: 0;
+        }
