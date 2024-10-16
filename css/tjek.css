@@ -18,34 +18,40 @@ body {
     font-family: "Epilogue";
     background-color:var(--baggrund);
     color: var(--tekst);
-    margin-left: 10rem;
+    margin-left: 11rem;
     margin-right: 10rem;
     margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 .logo img {
-    width: 175px;
+    width: 180px;
     height: auto;
-    margin-left: calc(-10rem);
+    margin-left: calc(-12rem);
     padding-bottom: 2rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding-top: 0rem;
+    padding-left: 3rem;
 
 }
 
 /* Navigation bar */
 .navbar {
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
-    padding: 10px 20px;
+    position: fixed; /* Gør navbaren fastgjort til toppen */
+    top: 0rem;
+    right: 3rem;
+    width: 85%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: var(--baggrund);
+    font-weight: 300;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 3rem;
     display: flex;
+    justify-content:right;
     gap: 20px;
 }
 
@@ -93,12 +99,16 @@ body {
 
 .øjnbrynstitel {
     font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-family: "Epilogue";
+    font-weight: 300;
 }
 
 h1 {
     font-family: "Playfair Display";
     color: var(--rødbrun);
     font-size: 60px;
+    margin-top: 0rem;
 }
 
 .header-content {
@@ -119,7 +129,7 @@ h1 {
 }
 
 .indledning {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
     line-height: 1.5rem;
 }

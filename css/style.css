@@ -18,52 +18,65 @@ body {
     font-family: "Epilogue";
     background-color:var(--baggrund);
     color: var(--tekst);
-}
-
-.logo img {
-    width: 150px;
-    height: auto;
+    margin-left: 6rem;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+    padding-top: 9rem;
 }
 
 /* Navigation bar */
-.navbar {
-    position: absolute;
+.navbar-container {
+    display: flex; /* Gør det til et flex-container */
+    justify-content: space-between; /* Sørger for, at logoet er til venstre og menuen til højre */
+    align-items: center; /* Vertikal centrering */
+    padding: 10px 20px; /* Lidt padding omkring indholdet */
+    background-color: var(--baggrund); /* Baggrundsfarve til hele baren */
+    position: fixed;
+    width: 100%; /* Sikrer, at baren fylder hele bredden */
     top: 0;
-    right: 0;
-    background-color: #d4cbbd;
-    padding: 10px 20px;
+    left: 0;
+    right: 0rem;
+    z-index: 1000; /* Sørger for, at baren er øverst */
 }
 
+/* Logo */
+.logo img {
+    width: 150px; /* Tilpas logoets størrelse */
+    height: auto;
+
+}
+
+/* Navbar */
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 4rem;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Afstand mellem menu punkterne */
 }
 
 .navbar ul li {
-    position: relative;
+    display: inline-block;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--tekst);
     font-size: 1.1rem;
-    padding: 5px 10px;
+    padding: 15px 15px;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #000;
+    color: var(--oliven);
 }
 
 /* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--off-white);
+    box-shadow: 0px 8px 16px, none;
     min-width: 160px;
     z-index: 1;
 }
@@ -71,13 +84,9 @@ body {
 .dropdown-content a {
     padding: 10px 20px;
     display: block;
-    text-decoration: none;
-    color: #333;
+    text-decoration: var(--oliven);
+    color: var(--tekst);
     font-size: 1rem;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -91,23 +100,117 @@ body {
 h1 {
     font-family: "Playfair Display";
     color: var(--rødbrun);
+    margin-top: calc(-2rem);
 }
 
-/* floating af billeder:
+/* Velkomst sektion */
+.velkommen {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
 
+.velkommen h1 {
+    font-family: 'Playfair Display', serif;
+    font-size:4rem;
+    color: var(--rødbrun);
+}
 
-        /* Full height and width */
-        html, body {
-            height: 100%;
-            width: 100%;
-        }
+.velkommen p {
+    font-size: 2.5rem;
+    color: rgb(48,48,49);
+    padding-left: 18rem;
+    font-style: italic;
+    line-height: 60px;
+    font-weight: 300;
 
-        /* Image styling */
-        .top-image {
-            display: block;         /* Remove inline space */
-            width: 100vw;           /* Full width of the viewport */
-            height: auto;           /* Maintain aspect ratio */
-            position: absolute;     /* Position at the top */
-            top: 0;
-            left: 0;
-        }
+}
+
+/* mere info boks */
+.info-box {
+    display: flex; /* Flexbox for at placere stjernen og teksten i linje */
+    align-items: center; /* Vertikal centrering af indholdet */
+    padding: 10px;
+    cursor: pointer; /* Ændrer markøren til en hånd, når man holder over */
+    transition: background-color 0.3s ease; /* Tilføjer en overgangseffekt */
+}
+
+/* Ikonboks */
+.icon-box {
+    display: flex; /* Sikrer at ikonet er centreret */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Fastsætter størrelsen på ikonkassen */
+    height: 40px;
+    border: 1px solid var(--tekst); /* Kant omkring ikonet */
+    margin-right: 30px; /* Plads mellem ikonet og teksten */
+}
+
+/* Ikonet */
+.icon {
+    font-size: 20px; /* Størrelse på ikonet */
+    line-height: 0; /* Fjerner ekstra plads omkring ikonet */
+}
+
+/* Teksten */
+.info-text {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    color: var(--tekst);
+}
+
+/* billeder */
+
+.kasser, .planter, .plukk, .studie, .træ {
+    display: block;
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    z-index: -1; /* Sørger for at billederne ligger bag alt andet */
+}
+
+/* Specifikke positioner for hvert billede */
+.kasser {
+    top: 32rem;
+    left: 20rem;
+}
+
+.planter {
+    top: 20rem;
+    left: 43rem;
+}
+
+.plukk {
+    top: calc(-1.5rem);
+    left: 43rem;
+}
+
+.studie {
+    top: 6rem;
+    left: 66rem;
+}
+
+.træ {
+    top: 40rem;
+    left: 66rem;
+}
+
+.text {
+    padding: 2rem;
+    color: var(--off-white);
+}
+
+.text p {
+    padding-top: 1rem;
+    font-size: small;
+    line-height: 2;
+    font-weight: 200;
+}
+
+.text h2 {
+    font-weight: 200;
+}
+
+.bottom {
+    padding-top: 22rem;
+}
