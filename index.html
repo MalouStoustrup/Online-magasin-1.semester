@@ -1,17 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Move2Aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>
-        Velkommen til AArhus
-    </h1>
-    <h2>Din start som studerende</h2>
+    <header>
+        <section class="logo">
+            <img src="img/logo.png" alt="Move2Aarhus logo">
+        </section>
+        <section>
+            <nav>
+                <ul class="menubar">
+                    <li><a href="index.html">Forside</a></li>
+                    <li class="dropdown">
+                        <a href="#">Flytning</a>
+                        <ul class="dropdown-content">
+                            <li><a href="tjekliste.html">Tjekliste for flytning</a></li>
+                            <li><a href="#">Pakning og organisering</a></li>
+                            <li><a href="#">Indretning af studiebolig</a></li>
+                            <li><a href="#">Affaldssortering i Aarhus</a></li>
+                            <li><a href="#">Roomie Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Studiestart</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Effektive noter</a></li>
+                            <li><a href="studieteknikker.html">Studieteknikker</a></li>
+                            <li><a href="#">Digitale værktøjer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Byliv</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Biblioteker og studievenlige cafeer</a></li>
+                            <li><a href="#">Aktivitet og sportsklubber</a></li>
+                            <li><a href="#">De bedste løberuter</a></li>
+                            <li><a href="grønne-oaser.html">Grønne oaser</a></li>
+                            <li><a href="#">Nørdede butikker</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Økonomi</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Spar med studierabat</a></li>
+                            <li><a href="#">Studielån og støttemuligheder</a></li>
+                            <li><a href="#">Budgetberegner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="velkommen">
+            <h1>Velkommen til Aarhus</h1>
+            <p>Din start som studerende</p>
+            <button>Mere information</button>
+        </section>
+
+        <section class="forside-billeder-grid">
+            <article class="billede billede-1">
+                <img src="img/forside/kasser.png" alt="Flytning tjekliste">
+                <div class="tekst">
+                    <h2>Flytning tjekliste</h2>
+                    <p>Alt du skal huske som førstegangsflytter</p>
+                </div>
+            </article>
+            <article class="billede billede-2">
+                <img src="img/forside/planter.png" alt="Grønne oaser i Aarhus">
+                <div class="tekst">
+                    <h2>Grønne oaser i Aarhus</h2>
+                    <p>Perfekte steder til en pause fra byens travlhed</p>
+                </div>
+            </article>
+            <article class="billede billede-3">
+                <img src="img/forside/plantecafe.png" alt="Plantecafé Plukk">
+            </article>
+            <article class="billede billede-4">
+                <img src="img/forside/studie.png" alt="Effektive studieteknikker">
+                <div class="tekst">
+                    <h2>Effektive studieteknikker</h2>
+                    <p>Til at komme godt i gang med studierne</p>
+                </div>
+            </article>
+            <article class="billede billede-5">
+                <img src="img/forside/træ.png" alt="Toppen af træ">
+            </article>
+        </section>
+    </main>
 </body>
 
-</html>
+</html> 
