@@ -4,12 +4,40 @@
     box-sizing: border-box;
 }
 
+:root {
+    --rødbrun: rgb(92,40,30);
+    --baggrund: rgb(214,204,188);
+    --tekst: rgb(48,48,49);
+    --oliven: rgb(140,135,106);
+    --karry: rgb(190,162,81);
+    --off-white: rgb(251,249,237)
+}
+
+body {
+    margin: 0;
+    font-family: "Epilogue";
+    background-color:var(--baggrund);
+    color: var(--tekst);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+}
+
+.logo img {
+    width: 175px;
+    height: auto;
+    margin-left: calc(-10rem);
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+
+}
+
 /* Navigation bar */
 .navbar {
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #d4cbbd;
+    top: 2rem;
+    right: 4rem;
     padding: 10px 20px;
 }
 
@@ -27,22 +55,22 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--tekst);
     font-size: 1.1rem;
-    padding: 5px 10px;
+    padding: 15px 15px;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #000;
+    color: var(--oliven);
 }
 
 /* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--off-white);
+    box-shadow: 0px 8px 16px, none;
     min-width: 160px;
     z-index: 1;
 }
@@ -50,13 +78,9 @@
 .dropdown-content a {
     padding: 10px 20px;
     display: block;
-    text-decoration: none;
-    color: #333;
+    text-decoration: var(--oliven);
+    color: var(--tekst);
     font-size: 1rem;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -65,4 +89,128 @@
 
 .dropbtn {
     cursor: pointer;
+}
+
+.øjnbrynstitel {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    color: var(--rødbrun);
+    font-size: 60px;
+}
+
+.header-content {
+    display: flex; /* Gør indholdet fleksibelt, så det placeres i en række */
+    align-items: center; /* Centrerer vertikalt */
+    justify-content: space-between; /* Tilføjer mellemrum mellem overskrift og billede */
+}
+
+.header-content h1 {
+    flex: 1; /* Sørger for at overskriften fylder så meget plads som muligt */
+}
+
+.header-content img.stjernesymbol {
+    width: 400px; /* Størrelse på billedet */
+    height: auto; /* Bevar proportionerne */
+    margin-left: 30px;
+
+}
+
+.indledning {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 22px;
+    color: var(--tekst);
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+h2 span {
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 10px;
+    color: var(--tekst);
+    font-family: "Fairplay Display";
+}
+
+.number2 {
+    color: var(--oliven);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--tekst);
+    max-width: 1000px;
+}
+
+
+/* tjekliste */
+
+.tjekliste {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    gap: 20px;
+    flex-wrap: wrap; /* Tillader linjebrud, hvis vinduet bliver mindre */
+
+}
+
+input[type="checkbox"] {
+
+    accent-color: var(--tekst);
+}
+
+.item-content {
+    max-width: 800px;
+}
+
+/* link */
+
+a {
+    color: var(--rødbrun);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* flueben*/
+
+input[type="checkbox"] {
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    appearance: none; /* Fjern standard checkbox-styling */
+    background-color: var(--off-white);
+    border: 1px solid var(--tekst);
+    cursor: pointer;
+    position: relative;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: var(--off-white); 
+    border-color: var(--tekst) 
+  }
+
+
+  input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 24px;
+    border: solid var(--rødbrun); 
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(45deg);
+
 }

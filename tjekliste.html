@@ -4,8 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tjekliste</title>
+    <title>Flytning tjekliste</title>
     <link rel="stylesheet" href="css/tjek.css">
+
+        <!-- Link til Playfair Display Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+       
+        <!-- Link til Epilouge Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+        <!-- Link til Zilla slab Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,6 +31,7 @@
         <section class="logo">
             <img src="img/logo.png" alt="Move2Aarhus logo">
         </section>
+
         <section>
             <nav class="navbar">
                 <ul>
@@ -23,7 +40,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Flytning</a>
                         <div class="dropdown-content">
-                            <a href="tjekliste.html">Flytning</a>
+                            <a href="tjekliste.html">Tjekliste til flytning</a>
                             <a href="#">Pakning og organisering</a>
                             <a href="#">Indretning af studiebolig</a>
                             <a href="#">Affaldssortering i Aarhus</a>
@@ -63,40 +80,48 @@
             </nav>
         </section>
 
-        <p>Ny i Aarhus</p>
-        <h1>Flytning tjekliste: <br> Alt, du skal huske som førstegangs flytter</h1>
-        <p>
-            At flytte for første gang kan føles overvældende - især når du står midt i Aarhus' travle gader og forsøger at holde styr på alt fra adresseændringer til opsætning af internet. Men bare rolig, du behøver ikke at klare det hele alene. Med vores flytning tjekliste får du en klar guide, der hjælper dig med at få styr på alle de vigtige opgaver – hurtigt og nemt. Denne tjekliste er skræddersyet til førstegangsflyttere, så du kan undgå stress og i stedet fokusere på det spændende ved din nye start.
-        </p>
+        <section>
+            <p class="øjnbrynstitel">Ny i Aarhus</p>
+                <article class="header-content">
+                    <h1>Flytning tjekliste: <br> Alt, du skal huske som <br> førstegangs flytter</h1>
+                    <img src="img/artikler/stjerne.png" alt="stjernesymbol" class="stjernesymbol">
+                </article>
+
+            <p class="indledning">
+                At flytte for første gang kan føles overvældende - især når du står midt i Aarhus' travle gader og forsøger at holde styr på alt fra adresseændringer til opsætning af internet. Men bare rolig, du behøver ikke at klare det hele alene. Med vores flytning tjekliste får du en klar guide, der hjælper dig med at få styr på alle de vigtige opgaver – hurtigt og nemt. Denne tjekliste er skræddersyet til førstegangsflyttere, så du kan undgå stress og i stedet fokusere på det spændende ved din nye start.
+            </p>
+        </section>
     </header>
 
     <main>
         <section class="tjekliste">
-            <input type="tjekboks" id="item1">
+            <input type="checkbox" id="item1">
             <label for="item1"></label>
             <article class="item-content">
                 <h2><span>01.</span> Meld flytning og skift adresse</h2>
                 <p>Du skal huske at melde flytning og ændre din adresse senest 5 dage efter, du er flyttet. Det er vigtigt at gøre dette rettidigt, da din post skal følge med dig til den nye adresse, og det er lovpligtigt at have din folkeregisteradresse korrekt opdateret.</p>
                 <ul>
-                    <li>Gør det her: <a href="https://www.borger.dk/bolig-og-flytning/flytning_oversigt/flytning-i-danmark">Borger.dk – Adresseændring</a></li>
+                    <br>
+                    <li>Gør det her: <a href="https://www.borger.dk/bolig-og-flytning/flytning_oversigt/flytning-i-danmark" target="_blank" >Borger.dk – Adresseændring</a></li>
                 </ul>
             </article>
         </section>
 
         <section class="tjekliste">
-            <input type="tjekboks" id="item2">
+            <input type="checkbox" id="item2">
             <label for="item2"></label>
             <article class="item-content">
-                <h2><span>02.</span>Skift af læge</h2>
+                <h2><span class="number2">02.</span>Skift af læge</h2>
                 <p>Når du flytter til en ny by som Aarhus, er det vigtigt at vælge en ny læge i dit nærområde. Glem ikke, at du også kan vælge en læge tættere på dit studie, hvis det er praktisk for dig. Vær opmærksom på at det kun er gratis at skifte læge, hvis du gør det i samme omgang som du skifter adresse. </p>
                 <ul>
-                    <li>Gør det her: <a href="https://www.borger.dk/sundhed-og-sygdom/sundhedskort--laegevalg-og-tandlaege/Valg-af-laege">Borger.dk – Skift Læge</a></li>
+                    <br>
+                    <li>Gør det her: <a href="https://www.borger.dk/sundhed-og-sygdom/sundhedskort--laegevalg-og-tandlaege/Valg-af-laege" target="_blank" >Borger.dk – Skift Læge</a></li>
                 </ul>
             </article>
         </section>
 
         <section class="tjekliste">
-            <input type="tjekboks" id="item3">
+            <input type="checkbox" id="item3">
             <label for="item3"></label>
             <article class="item-content">
                 <h2><span>03.</span>SU (Statens Uddannelsesstøtte)
@@ -104,46 +129,50 @@
                 <p> Hvis du er studerende, så husk at opdatere din SU med din nye adresse og eventuelt din nye boligsituation. Dette er nødvendigt, da din støtte kan afhænge af din boligsituation.
                 </p>
                 <ul>
-                    <li>Gør det her: <a href="https://su.dk/su/ny-su-modtager/soeg-su-i-minsu">MinSU</a></li>
+                    <br>
+                    <li>Gør det her: <a href="https://su.dk/su/ny-su-modtager/soeg-su-i-minsu" target="_blank" >MinSU</a></li>
                 </ul>
             </article>
         </section>
 
         <section class="tjekliste">
-            <input type="tjekboks" id="item4">
+            <input type="checkbox" id="item4">
             <label for="item4"></label>
             <article class="item-content">
                 <h2><span>04.</span>Boligstøtte</h2>
                 <p> Hvis du er berettiget til boligstøtte, skal du sørge for at ansøge eller opdatere dine oplysninger hos Udbetaling Danmark. Boligstøtte kan hjælpe dig med at reducere huslejen, så det er en oplagt mulighed, hvis du flytter til en større by som Aarhus med højere huslejer.
                 </p>
                 <ul>
-                    <li>Gør det her: <a href="https://www.borger.dk/Handlingsside?selfserviceId=c986f52f-9037-4769-8b9a-b5d6ff0f76cf">Borger.dk - Boligstøtte</a></li>
+                    <br>
+                    <li>Gør det her: <a href="https://www.borger.dk/Handlingsside?selfserviceId=c986f52f-9037-4769-8b9a-b5d6ff0f76cf" target="_blank" >Borger.dk - Boligstøtte</a></li>
                 </ul>
             </article>
         </section>
 
         <section class="tjekliste">
-            <input type="tjekboks" id="item5">
+            <input type="checkbox" id="item5">
             <label for="item5"></label>
             <article class="item-content">
                 <h2><span>05.</span>Forsikring</h2>
                 <p> Når du flytter, skal du sørge for at opdatere din adresse hos dit forsikringsselskab. Det gælder både indboforsikring og eventuelt andre relevante forsikringer, såsom ulykkesforsikring eller studieforsikring. Hvis du flytter til en større by, kan priserne ændre sig, så det er vigtigt at tjekke dine vilkår.
                 </p>
                 <ul>
+                    <br>
                     <li>Gør det her: Kontakt dit forsikringsselskab direkte</li>
                 </ul>
             </article>
         </section>
 
         <section class="tjekliste">
-            <input type="tjekboks" id="item6">
+            <input type="checkbox" id="item6">
             <label for="item6"></label>
             <article class="item-content">
                 <h2><span>06.</span>Internet og TV-abonnement</h2>
                 <p> Flytning er også et godt tidspunkt at sikre, at du har en god internetforbindelse i din nye bolig. Undersøg, hvilke udbydere der er i dit nye område, og vælg den bedste løsning i forhold til hastighed og pris.
                 </p>
                 <ul>
-                    <li>Gør det her: Se tilbus fra forskellige udbydere som f.eks. <a href="https://www.telia.dk/abonnementer/bredbaand/">Telia</a>, <a href="https://yousee.dk/bredbaand#forside">YouSee</a> eller <a href="https://www.oister.dk/internet/?utm_source=google&utm_medium=cpc&utm_campaign=Search%20-%20Brand%20-%20Category%20-%20Internet&utm_id=16583626281&gad_source=1&gclid=Cj0KCQjwyL24BhCtARIsALo0fSAXlkDOR26l80gj1664xkBMtsEgfw4qYekohpHtRgbnVwIaN2vgUu8aAlDPEALw_wcB">Oister</a> </li>
+                    <br>
+                    <li>Gør det her: Se tilbus fra forskellige udbydere som f.eks. <a href="https://www.telia.dk/abonnementer/bredbaand/" target="_blank" >Telia</a>, <a href="https://yousee.dk/bredbaand#forside" target="_blank" >YouSee</a> eller <a href="https://www.oister.dk/internet/?utm_source=google&utm_medium=cpc&utm_campaign=Search%20-%20Brand%20-%20Category%20-%20Internet&utm_id=16583626281&gad_source=1&gclid=Cj0KCQjwyL24BhCtARIsALo0fSAXlkDOR26l80gj1664xkBMtsEgfw4qYekohpHtRgbnVwIaN2vgUu8aAlDPEALw_wcB" target="_blank" >Oister</a> </li>
                 </ul>
             </article>
         </section>
