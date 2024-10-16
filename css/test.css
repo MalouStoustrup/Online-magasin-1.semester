@@ -1,9 +1,7 @@
 body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
     background-color: #f4f1e0;
-    color: #4a3d32;
 }
 
 /* Navigation bar */
@@ -61,54 +59,12 @@ body {
     background-color: #ddd;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* Dropdown button styling */
 .dropbtn {
     cursor: pointer;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* To lige store kolonner */
-    gap: 20px;
-}
-
-.column {
-    padding: 10px;
-}
-
-h1 {
-    font-size: 2rem;
-    color: #732914;
-    grid-column: span 2; /* Sørger for, at overskriften strækker sig over begge kolonner */
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #4a3d32;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-ol {
-    list-style: none;
-    padding: 0;
-}
-
-ol li {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #5a523f;
-}
-
-ol li::before {
-    content: counter(li) ". ";
-    counter-increment: li;
-    font-weight: bold;
 }
