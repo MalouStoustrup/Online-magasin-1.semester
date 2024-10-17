@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 20px;
     background-color: #f4f1e0;
     color: #4a3d32;
@@ -121,12 +126,14 @@ h1 {
     font-size: 3.5rem;
     margin-top: calc(-2rem);
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 h2 {
     font-size: 25px;
     color: var(--tekst);
     font-weight: 300;
+    padding-top: 1rem;
  }
 
  /* Tal */
@@ -150,6 +157,8 @@ p {
     max-width: 700px;
     min-width: 700px;
     text-align-last: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 /* Billeder */
