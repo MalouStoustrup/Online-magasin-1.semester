@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap: https://webunivers.maloustoustrup.dk/sitemap-test.xml
+sitemap: https://webunivers.maloustoustrup.dk/sitemap.xml
