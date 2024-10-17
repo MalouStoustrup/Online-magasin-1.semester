@@ -6,45 +6,80 @@ body {
     color: #4a3d32;
 }
 
-/* Navigation bar */
-.navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #d4cbbd;
-    padding: 10px 20px;
+
+:root {
+    --rødbrun: rgb(92,40,30);
+    --baggrund: rgb(214,204,188);
+    --tekst: rgb(48,48,49);
+    --oliven: rgb(140,135,106);
+    --karry: rgb(190,162,81);
+    --off-white: rgb(251,249,237)
 }
 
-.navbar ul {
-    list-style-type: none;
+body {
     margin: 0;
-    padding: 0;
+    font-family: "Epilogue";
+    background-color:var(--baggrund);
+    color: var(--tekst);
+    margin-left: 6rem;
+    margin-right: 10rem;
+    margin-bottom: 4rem;
+    padding-top: 9rem;
+}
+
+/* Navigation bar */
+.navbar-container {
+    display: flex; /* Gør det til et flex-container */
+    justify-content: space-between; /* Sørger for, at logoet er til venstre og menuen til højre */
+    align-items: center; /* Vertikal centrering */
+    padding: 10px 20px; /* Lidt padding omkring indholdet */
+    background-color: var(--baggrund); /* Baggrundsfarve til hele baren */
+    position: fixed;
+    width: 100%; /* Sikrer, at baren fylder hele bredden */
+    top: 0;
+    left: 0;
+    right: 0rem;
+    z-index: 1000; /* Sørger for, at baren er øverst */
+}
+
+/* Logo */
+.logo img {
+    width: 150px; /* Tilpas logoets størrelse */
+    height: auto;
+
+}
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 4rem;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Afstand mellem menu punkterne */
 }
 
 .navbar ul li {
-    position: relative;
+    display: inline-block;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--tekst);
     font-size: 1.1rem;
-    padding: 5px 10px;
+    padding: 15px 15px;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #000;
+    color: var(--oliven);
 }
 
 /* Dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--off-white);
+    box-shadow: 0px 8px 16px, none;
     min-width: 160px;
     z-index: 1;
 }
@@ -52,13 +87,9 @@ body {
 .dropdown-content a {
     padding: 10px 20px;
     display: block;
-    text-decoration: none;
-    color: #333;
+    text-decoration: var(--oliven);
+    color: var(--tekst);
     font-size: 1rem;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -69,46 +100,76 @@ body {
     cursor: pointer;
 }
 
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* To lige store kolonner */
-    gap: 20px;
+    gap: 5rem;
 }
 
 .column {
     padding: 10px;
 }
 
+.øjnbrynstitel {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
 h1 {
-    font-size: 2rem;
-    color: #732914;
+    font-family: "Playfair Display";
+    color: var(--rødbrun);
+    font-size: 3.5rem;
+    margin-top: calc(-2rem);
     grid-column: span 2; /* Sørger for, at overskriften strækker sig over begge kolonner */
+    padding-top: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #4a3d32;
-    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--tekst);
+    font-weight: 300;
+ }
+
+ h2 span {
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 10px;
+    color: var(--tekst);
+    font-family: "Fairplay Display";
 }
 
 p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--tekst);
+    max-width: 700px;
+    min-width: 700px;
+    text-align-last: left;
 }
 
-ol {
-    list-style: none;
-    padding: 0;
+.natur {
+    width: 100%;
+    margin-left: calc(-10rem);
+    padding: 3rem;
 }
 
-ol li {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #5a523f;
+.plukk {
+    width: 130%;
+    margin-top: 10rem;
+    margin-left: 1rem;
 }
 
-ol li::before {
-    content: counter(li) ". ";
-    counter-increment: li;
-    font-weight: bold;
+.højre-kolonne p {
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.højre-kolonne {
+    margin-top: calc(-12rem);
+}
+
+.two {
+    color: var(--oliven);
 }

@@ -98,6 +98,12 @@ body {
     cursor: pointer;
 }
 
+.øjnbrynstitel {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
 h1 {
     font-family: "Playfair Display";
     color: var(--rødbrun);
@@ -120,6 +126,7 @@ p {
     max-width: 1000px;
 }
 
+
 .indledning {
     padding-bottom: 2rem;
     max-width: 800px;
@@ -127,12 +134,22 @@ p {
     text-align-last: left;
 }
 
+/* Container til tekst og billeder */
+.billede-section {
+    display: grid;
+    
+    gap: 2rem; /* Giver mellemrum mellem kolonnerne */
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
 .biblo {
     display: block;
     width: 55%;
     height: auto;
     position: absolute;
-    z-index: -1; /* Sørger for at billederne ligger bag alt andet */
+    z-index: -1; 
     top: 35rem;
     right: 0rem;
 }
@@ -142,7 +159,7 @@ p {
     width: 35%;
     height: auto;
     position: absolute;
-    z-index: -1; /* Sørger for at billederne ligger bag alt andet */
+    z-index: -1; 
     top: 45rem;
     left: 0rem;
 }
@@ -173,14 +190,20 @@ h3 {
     font-weight: 300;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .tal {
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: bold;
     color: var(--text);
+    font-family: "Fairplay Display";
 }
 
+
+.two {
+    color: var(--oliven);
+}
 .repetition h3 {
     padding-top: 3rem;
 
