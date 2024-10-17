@@ -18,45 +18,45 @@ body {
     font-family: "Epilogue";
     background-color:var(--baggrund);
     color: var(--tekst);
-    margin-left: 11rem;
+    margin-left: 6rem;
     margin-right: 10rem;
     margin-bottom: 4rem;
-    margin-top: 1rem;
-}
-
-.logo img {
-    width: 180px;
-    height: auto;
-    margin-left: calc(-12rem);
-    padding-bottom: 2rem;
-    padding-top: 0rem;
-    padding-left: 3rem;
-
+    padding-top: 9rem;
 }
 
 /* Navigation bar */
-.navbar {
-    position: fixed; /* Gør navbaren fastgjort til toppen */
-    top: 0rem;
-    right: 3rem;
-    width: 85%;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: var(--baggrund);
-    font-weight: 300;
+.navbar-container {
+    display: flex; /* Gør det til et flex-container */
+    justify-content: space-between; /* Sørger for, at logoet er til venstre og menuen til højre */
+    align-items: center; /* Vertikal centrering */
+    padding: 10px 20px; /* Lidt padding omkring indholdet */
+    background-color: var(--baggrund); /* Baggrundsfarve til hele baren */
+    position: fixed;
+    width: 100%; /* Sikrer, at baren fylder hele bredden */
+    top: 0;
+    left: 0;
+    right: 0rem;
+    z-index: 1000; /* Sørger for, at baren er øverst */
 }
 
+/* Logo */
+.logo img {
+    width: 150px; /* Tilpas logoets størrelse */
+    height: auto;
+
+}
+
+/* Navbar */
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
-    padding-right: 3rem;
+    padding-right: 4rem;
     display: flex;
-    justify-content:right;
-    gap: 20px;
+    gap: 20px; /* Afstand mellem menu punkterne */
 }
 
 .navbar ul li {
-    position: relative;
+    display: inline-block;
 }
 
 .navbar ul li a {
