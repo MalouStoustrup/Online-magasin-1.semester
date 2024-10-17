@@ -168,6 +168,15 @@ li {
     margin-left: 1rem;
 }
 
+a {
+    color: var(--rødbrun);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* linje under link når musen køres over */
+}
+
 .studieteknikker article {
     padding-top: 2rem;
     text-align-last: left;
